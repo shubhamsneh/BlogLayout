@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Poppins&family=Raleway&family=Roboto&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    background: rgb(255, 255, 255);
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(4,auto);
+    grid-template-columns: repeat(3,auto);
+    grid-template-areas: 
+    "ht ht ht ht"
+    "main main main about"
+    "main main main arch"
+    "main main main arch"
+    "main main main else"
+    "main main main else"
+    "main main main else"
+    "main main main else"
+    "main main main else"
+    "ft ft ft ft";
+}
+.row{
+    width: auto;
+    height: auto;
+    margin: 30px;
+    padding: 10px;
+
+}
+#header{
+    grid-area: ht;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 10px;
+
+}
+#blogPost{
+    grid-area: main;
+}
+#About{
+    grid-area: about;
+}
+
+#Archives{
+    grid-area: arch;
+}
+#Elsewhere{
+    grid-area: else;
+}
+#Footer{
+    grid-area: ft;
+}
+.header{
+    padding: 10px;
+    font-size:x-large;
+}
+
+#header a{
+    color: #796d6d;
+    font-size: 15px;
+}
+.date{
+    padding-bottom: 20px;
+}
+.para{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#undersq{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.about-para{
+    background-color: #f1f1f0;
+    margin-top: 10px;
+}
+#About h3{
+    background-color: #f1f1f0;
+}
+.list{
+    padding-left: 40px;
+}
+button{
+    height: 2rem;
+    width: 6rem;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+
+
+}
+.prevBtn{
+    border-color: #2196F3;
+    color: dodgerblue;
+}
+.prevBtn:hover{
+    background-color: #2196F3;
+    color: white;
+}
